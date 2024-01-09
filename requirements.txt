@@ -1,0 +1,5 @@
+Flask
+pickle
+scikit-learn
+uvicorn
+gunicorn
