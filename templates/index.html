@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Housing Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <h1>Housing Price Prediction</h1>
+    <form action="/predict" method="post">
+        <!-- Labels and inputs for all columns -->
+        <div class="input-row">
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area">
+        </div>
+
+        <div class="input-row">
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="text" id="bedrooms" name="bedrooms">
+        </div>
+
+        <div class="input-row">
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="text" id="bathrooms" name="bathrooms">
+        </div>
+
+        <div class="input-row">
+            <label for="stories">Stories:</label>
+            <input type="text" id="stories" name="stories">
+        </div>
+
+        <div class="input-row">
+            <label for="mainroad">Main Road:</label>
+            <select id="mainroad" name="mainroad">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+
+        <div class="input-row">
+            <label for="guestroom">Guest Room:</label>
+            <select id="guestroom" name="guestroom">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+
+        <div class="input-row">
+            <label for="basement">Basement:</label>
+            <select id="basement" name="basement">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+
+        <div class="input-row">
+            <label for="hotwaterheating">Hot Water Heating:</label>
+            <select id="hotwaterheating" name="hotwaterheating">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+
+        <div class="input-row">
+            <label for="airconditioning">Air Conditioning:</label>
+            <select id="airconditioning" name="airconditioning">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+
+        <div class="input-row">
+            <label for="parking">Parking:</label>
+            <input type="text" id="parking" name="parking">
+        </div>
+
+        <div class="input-row">
+            <label for="prefarea">Preferred Area:</label>
+            <select id="prefarea" name="prefarea">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+
+        <div class="input-row">
+            <label for="furnishingstatus">Furnishing Status:</label>
+            <select id="furnishingstatus" name="furnishingstatus">
+                <option value="2">Unfurnished</option>
+                <option value="1">Semi-furnished</option>
+                <option value="0">Furnished</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
