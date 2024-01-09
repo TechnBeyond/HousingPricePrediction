@@ -1,0 +1,71 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Soothing background color */
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Adjust styles for label and input */
+.input-row label {
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input-row input[type="text"],
+.input-row select {
+    width: 60%;
+}
